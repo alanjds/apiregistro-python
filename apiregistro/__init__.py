@@ -13,7 +13,7 @@
    See the License for the specific language governing permissions and
    limitations under the License.
 """
+from .client import Client
 
 __version__ = '17.07'   # Date based versioning
 # See: https://packaging.python.org/tutorials/distributing-packages/#date-based-versioning
-
