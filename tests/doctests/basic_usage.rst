@@ -11,5 +11,5 @@ Client creation
 
 .. testsetup:
 
-    >>> spam
-    eggs
+    >>> 'spam'
+    'spam'
