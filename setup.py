@@ -78,6 +78,8 @@ setup(
     install_requires=[
         'slumber>=0.7.1',
         'requests[security]>=2.13.0',
+        'future>=0.16.0',
+        'six>=1.10.0',
     ],
     setup_requires=['pytest-runner'],
     tests_require=['pytest', 'pytest-cov'],
