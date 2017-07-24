@@ -19,7 +19,7 @@ class Client(object):
         self._base_url = base_url
         self._slumber = slumber.API(base_url + '/api/v1')
         self._slumber._store['session'].headers.update({
-            'Token': token,
+            'Authorization': 'Token %s' % token,
         })
 
     def __repr__(self):
