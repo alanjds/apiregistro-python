@@ -8,7 +8,7 @@ from setuptools import setup
 
 name = 'apiregistro'
 package = 'apiregistro'
-description = 'Reference Python client for the www.apiregistro.com.br Brazilian registrar'
+description = 'Non-official reference Python client for the www.apiregistro.com.br Brazilian registrar'
 url = 'https://github.com/alanjds/apiregistro-python'
 author = 'Alan Justino da Silva'
 author_email = 'alan.justino@yahoo.com.br'

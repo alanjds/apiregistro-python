@@ -1,7 +1,7 @@
 API Registro' Python Client
 ===========================
 
-Reference Python client for the www.apiregistro.com.br Brazilian registrar
+Non-official reference Python client for the www.apiregistro.com.br Brazilian registrar
 
 .. image:: https://travis-ci.org/alanjds/apiregistro-python.svg?branch=master
    :target: https://travis-ci.org/alanjds/apiregistro-python
