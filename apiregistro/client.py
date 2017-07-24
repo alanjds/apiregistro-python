@@ -30,7 +30,11 @@ class Client(object):
         return '<%s: %s>' % (self.__class__.__name__, u)
 
     def __str__(self):
-        return 'token=%s base=%s' % (self._token, self._base_url)
+        return 'token=%s base=%s document=%s' % (
+            self._token,
+            self._base_url,
+            self._document,
+        )
 
     def domain_search(self, name):
         return self._slumber.domains.get(search=name)['results']
