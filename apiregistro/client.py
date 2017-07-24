@@ -9,6 +9,7 @@ import logging
 logger = logging.getLogger(__name__)
 
 import slumber
+from slumber.exceptions import HttpClientError
 
 
 @python_2_unicode_compatible
@@ -43,11 +44,14 @@ class Client(object):
         return self._slumber.domains(name).get()
 
     def domain_buy(self, name, document=None):
-        document = document or self.document
-        if not document:
-            raise RuntimeError("Cannot register a domain without a 'document'")
+        document = document or self._document
+        request_args = {}
 
-        result = self._slumber.domains(name).buy.post({
-            'document': document,
-        })
-        return result
+        if document:
+            request_args['document'] = document
+
+        try:
+            result = self._slumber.domains(name).buy.post(request_args)
+        except HttpClientError, e:
+            return False, e.response.text, e.response
+        return result, '', None
