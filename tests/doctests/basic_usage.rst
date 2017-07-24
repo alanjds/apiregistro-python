@@ -68,5 +68,5 @@ And the 'document' should belong to an existent Contact manageable by you.
 
 .. testsetup:
 
-    >>> spam
-    eggs
+    >>> 'spam'
+    'spam'
