@@ -76,7 +76,7 @@ setup(
     packages=get_packages(package),
     package_data=get_package_data(package),
     install_requires=[
-        'slumber>=0.7.1'
+        'slumber>=0.7.1',
         'requests[security]>=2.13.0',
     ],
     setup_requires=['pytest-runner'],
