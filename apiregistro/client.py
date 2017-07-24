@@ -40,7 +40,7 @@ class Client(object):
         return self._slumber.domains.get(search=name)['results']
 
     def domain_info(self, name):
-        return self._slumber.domains(name)
+        return self._slumber.domains(name).get()
 
     def domain_buy(self, name, document=None):
         document = document or self.document
